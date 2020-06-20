@@ -1,0 +1,36 @@
+package demo.projectreportimp;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import Progrms.EvenOdd;
+
+public class BaseClass {
+
+	@BeforeClass
+	public void bfr() {
+		EvenOdd.cls;
+	}
+
+	@AfterClass
+	public void afr() {
+
+	}
+
+	@Test
+	public void test01() {
+
+	}
+
+	@Test
+	public void test02() {
+
+	}
+
+	@Test
+	public void test03() {
+
+	}
+
+}

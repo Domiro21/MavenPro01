@@ -1,0 +1,40 @@
+package demo.projectreportimp;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import Progrms.EvenOdd;
+import Progrms.Largest;
+import Progrms.VowelConsonant;
+
+public class BaseClass {
+
+	@BeforeTest
+	public void bfr() {
+		System.out.println("Before Class");
+	}
+
+	@AfterTest
+	public void afr() {
+		System.out.println("After Class");
+
+	}
+
+	@Test
+	public void test01() {
+		Largest.cl();
+	}
+
+	@Test
+	public void test02() {
+		EvenOdd.cl();
+	}
+
+	@Test
+	public void test03() {
+		VowelConsonant.cl();
+
+	}
+
+}

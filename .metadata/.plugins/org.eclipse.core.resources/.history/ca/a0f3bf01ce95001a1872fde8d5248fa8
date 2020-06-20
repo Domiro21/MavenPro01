@@ -1,0 +1,47 @@
+package prac_ro;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class exclData {
+
+	public static void readexcl() throws Exception {
+
+		FileInputStream fis = new FileInputStream(
+				"D:\\Projects\\Java Projects\\Project06thApril\\WEbsite\\webauto\\data\\Data.xlsx");
+
+		@SuppressWarnings("resource")
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+
+		XSSFSheet sh = wb.getSheet("Sheet1");
+
+		Row row = sh.getRow(0);
+		Cell cell;
+
+		// System.out.println(cell);
+
+		// String cellval = cell.getStringCellValue();
+
+		System.out.println("Hello");
+		int rowcount = sh.getLastRowNum();
+		System.out.println("Total number of rows= " + rowcount);
+
+		int colcount = row.getLastCellNum();
+		System.out.println("Total number of cols " + colcount);
+
+		for (int i = 1; i <= rowcount; rowcount++) {
+
+			for (int j = 1; j <= colcount; colcount++) {
+				
+				System.out.println("Hey YOu there !!");
+			}
+			System.out.println("");
+		}
+
+	}
+}

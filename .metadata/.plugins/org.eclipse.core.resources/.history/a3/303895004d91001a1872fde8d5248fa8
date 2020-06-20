@@ -1,0 +1,55 @@
+package prac_ro;
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+public class exclData {
+
+	public static void readexcl() throws Exception {
+
+		FileInputStream fis = new FileInputStream(
+				"D:\\Projects\\Java Projects\\Project06thApril\\WEbsite\\webauto\\data\\Data.xlsx");
+		
+		System.out.println("Hello");
+		
+		@SuppressWarnings("resource")
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		
+		System.out.println("Hello");
+		
+		
+		XSSFSheet sh = wb.getSheet("Sheet1");
+		System.out.println("Hello");
+		
+		Row row = sh.getRow(0);
+		System.out.println("Hello");
+		
+		
+		Cell cell = row.getCell(0);
+		System.out.println("Hello");
+		
+		System.out.println("Hello");
+		System.out.println(cell);
+
+		// String cellval = cell.getStringCellValue();
+
+		System.out.println("Hello");
+		int rowcount = sh.getLastRowNum();
+		System.out.println("Total number of rows= " + rowcount);
+
+		int colcount = sh.getRow(1).getLastCellNum();
+
+		for (int i = 0; i <= rowcount; rowcount++) {
+
+			for (int j = 0; j <= colcount; colcount++) {
+
+				System.out.println(sh.getRow(i).getCell(j));
+			}
+		}
+
+	}
+}

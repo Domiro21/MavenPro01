@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;prac_ro.exclDate&apos; to &apos;exclData&apos;&#x0D;&#x0A;- Original project: &apos;webauto&apos;&#x0D;&#x0A;- Original element: &apos;prac_ro.exclDate&apos;&#x0D;&#x0A;- Renamed element: &apos;prac_ro.exclData&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;exclDate&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;prac_ro{exclDate.java[exclDate" matchStrategy="1" name="exclData" qualified="false" references="true" similarDeclarations="false" stamp="1588883521231" textual="false" version="1.0"/>
+</session>

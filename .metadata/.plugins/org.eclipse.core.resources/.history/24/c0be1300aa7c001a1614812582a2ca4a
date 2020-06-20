@@ -1,0 +1,16 @@
+package Runner;
+
+import com.beust.testng.TestNG;
+
+import demo.projectreportimp.BaseClass;
+
+public class TestRunner {
+	TestNG testSuite = new TestNG();
+	testSuite.setTestClasses(new Class[] { projectreportimp.BaseClass.class });
+	testSuite.addListener(new Test5SuiteListener());
+	testSuite.setDefaultSuiteName("My Test Suite");
+	testSuite.setDefaultTestName("My Test");
+	testSuite.setOutputDirectory("/Users/pankaj/temp/testng-output");
+	testSuite.run();
+
+}
